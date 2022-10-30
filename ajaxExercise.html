@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ajaxExercise.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="ajaxExercise.js"></script>
+    <title>Movies</title>
+</head>
+<body>
+        <div class="center">
+            <div class="bot-gap">
+                <span class="title">Movie Search</span>
+            </div>
+
+            <div class="bot-gap">
+                <form>
+                    <input id="searchInput" type="text" class="search rounded" placeholder="Type a Movie..." autofocus>
+                    <img id="waiting" class="hidden valign-middle" src="./image/waiting.gif" alt="waiting gif image">
+                </form>
+            </div>
+        
+            <div class="movie">
+                <div class="movie-poster hidden">
+                    <img id="posterImage" class="valign-middle" src="" alt="No available image">
+                </div>
+            </div>
+        </div>
+
+        <div class="messages center">
+            <div class="not-found hidden">
+                <span>Movies not found with these criteria.</span>
+            </div>
+
+            <div class="error hidden">
+                <span>Error found after service call.</span>
+            </div>
+        </div>
+</body>
+</html>

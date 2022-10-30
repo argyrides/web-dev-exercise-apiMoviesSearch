@@ -1,0 +1,119 @@
+body{
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+.center {
+    text-align: center;
+    height: 50%;
+}
+
+.valign-middle{
+    vertical-align: middle;
+}
+
+.valign-bottom {
+    vertical-align: bottom;
+}
+
+.bot-gap{
+    margin-bottom: 20px;
+}
+
+.title{
+    color: black;
+    font-size: 28px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0, 0.4);
+}
+
+input[type="text"].search {
+    width: 200px;
+    height: 50px;
+    background-image: url(./image/search.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 45px;
+    padding-left: 45px;
+}
+
+input[type="text"].rounded {
+    border-radius: 18px;
+    border: 1.5px solid black;
+}
+
+input.search:focus {
+    outline: none;
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+.movie {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.movie-poster {
+    width: 300px;
+    height: 450px;
+    margin-right: 15px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.movie-title {
+    color: black;
+    font-size: 30px;
+    font-family: monospace;
+    margin-bottom: 15px;
+}
+
+.movie-text {
+    color: black;
+    font-size: 16px;
+    font-family: monospace;
+    text-align: left;
+}
+
+.rating::after {
+    content: " / " attr(data-scale);
+}
+
+p.collapsible{
+    max-height: 1.25px;
+    transition: max-height 2.25s ease-out;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.block-text {
+    width: 250px;
+}
+
+p.collapsible.expanded{
+    max-height: 500px;
+    transition: max-height 2.15s ease-in;
+    white-space: normal;
+}
+
+.icon-small {
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+}
+
+.show-more {
+    border: 1px solid black;
+    padding: 15px 10px;
+    text-decoration: none;
+}
+
+.inline > span {
+    margin-right: 15px;
+}
